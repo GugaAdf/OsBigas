@@ -83,13 +83,21 @@ body {
     margin: 0 auto;
 }
 
-.conteudo-secundario-c {
+/*
+.conteudo-secundario-card {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-    gap: 30px;
+    flex-direction: row wrap;
     margin-top: 50px;
+    padding: 40px; 
+}
+*/
+
+.conteudo-secundario-c {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: bisque;
 }
 
 .conteudo-secundario-titulo {
