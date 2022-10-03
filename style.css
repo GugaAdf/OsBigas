@@ -8,6 +8,13 @@
     text-decoration: none;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-size: 100%;
     background-color: #44475a;
@@ -45,6 +52,7 @@ body {
 .conteudo {
     margin-bottom: 48px;
     border-top: 1px solid #6272A4;
+    
 }
 
 .conteudo-principal {
@@ -79,25 +87,40 @@ body {
 }
 
 .conteudo-secundario {
-    max-width: 960px;
+    max-width: 95%;
     margin: 0 auto;
+    background-color: turquoise;
 }
 
-/*
 .conteudo-secundario-card {
-    display: flex;
-    flex-direction: row wrap;
-    margin-top: 50px;
-    padding: 40px; 
+    width: 90%;
+    background-color: violet;
 }
-*/
 
 .conteudo-secundario-c {
-    display: inline-block;
+    display: inline-grid;
+    column-gap: 50px;
+   
     width: 300px;
-    height: 400px;
+    height: 600px;
     margin-bottom: 20px;
-    background-color: bisque;
+    background-color: tomato;
+    
+}
+
+.conteudo-secundario-c:not(:first-child) {
+    margin-left: -50px;
+}
+
+.conteudo-secundario-c:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.conteudo-secundario-c:hover ~ .conteudo-secundario-card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
 }
 
 .conteudo-secundario-titulo {
@@ -124,7 +147,42 @@ body {
     text-align: center;
 }
 
+/*
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar {
+    margin-top: 60px;
+    background-color: #8be9fd;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    margin-top: 60px;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+}
+
+.conteudo-secundario-card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease;
+}
+*/
+
 .conteudo-secundario-paragrafo {
+    column-gap: 10%;
     line-height: 23px;
     padding: 0px 50px;
     font-family: 'Roboto Mono', monospace;
