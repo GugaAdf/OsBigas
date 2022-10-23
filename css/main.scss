@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Irish+Grover&family=Roboto+Mono&display=swap');
+
+$bg-color: #44475a;
+$text-color: #f8f8f2;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    body {
+        font-size: 100%;
+        background-color: $bg-color;
+    }
+}
+
+// cabeçalho barras de navegação //
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+
+    .cabecalho-logo {
+        height: 80px;
+    }
+
+    .cabecalho-menu {
+        display: flex;
+        gap: 35px;
+    }
+}
+
+.cabecalho-menu-item {
+    font-family: 'Inter', sans-serif;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 18px;
+
+    &:hover {
+        background-color: $bg-color;
+        transition-duration: 0.4s;
+    }   
+}
+
+// conteudo sobre os bigas //
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 1px solid #6272A4;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Irish Grover', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: $text-color;
+    text-align: center;
+}
+
+.conteudo-principal-escrito-paragrafo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 17px;
+    color: $text-color;
+    max-width: 900px;
+    text-align: center;
+}
+
+// integrantes e cards //
+.conteudo-secundario {
+    max-width: 95%;
+    margin: 0 auto;
+   // background-color: turquoise;
+
+    .conteudo-secundario-card {
+        width: 90%;
+       // background-color: violet;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+
+    .conteudo-secundario-c {
+        display: inline-grid;
+        column-gap: 50px;
+       
+        width: 300px;
+        height: 600px;
+        margin-bottom: 20px;
+       // background-color: tomato;
+        
+        &:not(:first-child) {
+            margin: 20px;
+            
+        }
+
+        &:hover {
+            transform: translateY(-20px);
+            transition: 0.4s ease-out;
+        }
+
+        &:hover ~ .conteudo-secundario-card {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        } 
+    }
+
+    .conteudo-secundario-titulo {
+        border-top: 0.4px solid #6272A4;
+        padding-top: 48px;
+        font-family: 'Irish Grover', cursive;
+        font-weight: 400;
+        font-size: 40px;
+        color: $text-color;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-secundario-imagem {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .conteudo-secundario-subtitulo {
+        font-family: 'Inter', sans-serif;
+        color: #8be9fd;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .conteudo-secundario-paragrafo {
+        column-gap: 10%;
+        line-height: 23px;
+        padding: 0px 50px;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 400;
+        font-size: 17px;
+        color: $text-color;
+        text-align: center;
+    }
+}
+
+// rodapé com titulo //
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #6272A4;
+
+    .rodape-titulo {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Irish Grover', cursive;
+        color: #8be9fd;
+    }
+}
