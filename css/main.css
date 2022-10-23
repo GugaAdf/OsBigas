@@ -39,7 +39,7 @@ html body, body body {
   font-size: 18px;
 }
 .cabecalho-menu-item:hover {
-  background-color: #44475a;
+  color: #bd93f9;
   transition-duration: 0.4s;
 }
 
@@ -97,7 +97,7 @@ html body, body body {
   margin-bottom: 20px;
 }
 .conteudo-secundario .conteudo-secundario-c:not(:first-child) {
-  margin: 20px;
+  margin: 10px;
 }
 .conteudo-secundario .conteudo-secundario-c:hover {
   transform: translateY(-20px);
