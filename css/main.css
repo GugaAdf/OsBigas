@@ -6,15 +6,17 @@
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-html body, body body {
+html body,
+body body {
   font-size: 100%;
-  background-color: #44475a;
+  background-image: linear-gradient(to right, #282a36, #44475a);
 }
 
 .cabecalho {
@@ -80,24 +82,37 @@ html body, body body {
 }
 
 .conteudo-secundario {
-  max-width: 95%;
   margin: 0 auto;
 }
 .conteudo-secundario .conteudo-secundario-card {
   width: 90%;
   margin: 0 auto;
   padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 .conteudo-secundario .conteudo-secundario-c {
   display: inline-grid;
   -moz-column-gap: 50px;
        column-gap: 50px;
   width: 300px;
-  height: 600px;
+  height: 700px;
   margin-bottom: 20px;
+  /*width: 100%;
+  height: 400px; 
+  max-width: 300px;*/
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  align-items: baseline;
 }
 .conteudo-secundario .conteudo-secundario-c:not(:first-child) {
-  margin: 10px;
+  margin: 8px;
 }
 .conteudo-secundario .conteudo-secundario-c:hover {
   transform: translateY(-20px);
@@ -105,12 +120,12 @@ html body, body body {
 }
 .conteudo-secundario .conteudo-secundario-c:hover ~ .conteudo-secundario-card {
   position: relative;
-  left: 50px;
   transition: 0.4s ease-out;
 }
 .conteudo-secundario .conteudo-secundario-titulo {
   border-top: 0.4px solid #6272A4;
   padding-top: 48px;
+  padding-bottom: 30px;
   font-family: "Irish Grover", cursive;
   font-weight: 400;
   font-size: 40px;
@@ -121,6 +136,10 @@ html body, body body {
 .conteudo-secundario .conteudo-secundario-imagem {
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
 }
 .conteudo-secundario .conteudo-secundario-subtitulo {
   font-family: "Inter", sans-serif;
@@ -139,6 +158,7 @@ html body, body body {
   font-size: 17px;
   color: #f8f8f2;
   text-align: center;
+  height: 350px;
 }
 
 .rodape {
